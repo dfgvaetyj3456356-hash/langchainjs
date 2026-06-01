@@ -1,5 +1,15 @@
 # langchain
 
+## 1.4.4
+
+### Patch Changes
+
+- [#10945](https://github.com/langchain-ai/langchainjs/pull/10945) [`bb30838`](https://github.com/langchain-ai/langchainjs/commit/bb30838d884000d168dbbb26ddf7cfb9fa63b437) Thanks [@christian-bromann](https://github.com/christian-bromann)! - fix(langchain): propagate ReactAgent withConfig defaults to inner graph
+
+  Apply static defaults from `#defaultConfig` onto the compiled pregel so
+  `recursionLimit`, metadata, and other LangGraph config survives LangGraph API
+  loading, which unwraps ReactAgent to `.graph` before execution.
+
 ## 1.4.3
 
 ### Patch Changes
